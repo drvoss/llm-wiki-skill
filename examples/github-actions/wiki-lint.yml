@@ -1,0 +1,31 @@
+name: wiki-lint
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  lint-wiki:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run wiki lint
+        env:
+          LLM_WIKI_PATH: ./examples/sample-wiki
+        run: |
+          python3 scripts/wiki-lint.py --strict "$LLM_WIKI_PATH"
+
+      - name: Emit JSON report
+        env:
+          LLM_WIKI_PATH: ./examples/sample-wiki
+        run: |
+          python3 scripts/wiki-lint.py --json "$LLM_WIKI_PATH"

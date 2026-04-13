@@ -1,0 +1,26 @@
+# Personal wiki data — the wiki you create with this skill lives in LLM_WIKI_PATH,
+# not in this repository. Don't accidentally commit it here.
+wiki/
+my-wiki/
+*.wiki/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Node (if any tooling is added)
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Local scratch space
+_tmp/

@@ -1,0 +1,15 @@
+{
+  "exit_code": 1,
+  "required_error_substrings": [
+    "source not found",
+    "broken link"
+  ],
+  "required_warning_substrings": [
+    "unknown tag",
+    "no frontmatter block",
+    "not in index.md",
+    "only 1 outbound wiki link",
+    "contradiction target not found",
+    "header mismatch"
+  ]
+}
