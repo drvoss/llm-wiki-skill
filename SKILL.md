@@ -346,6 +346,7 @@ Add-Content "$wiki/log.md" "## [$date] archive | old-page.md — superseded by n
 
 - [templates/](templates/) — ready-made `SCHEMA.md` for tech-stack, codebase, product-intelligence, and research wikis
 - [templates/pages/](templates/pages/) — starter page skeletons for entity, concept, comparison, and query pages
+- [docs/OPERATIONS.md](docs/OPERATIONS.md) — day-2 operating guidance for keeping a wiki healthy over time
 - [scripts/wiki-init.py](scripts/wiki-init.py) — bootstrap a new wiki skeleton from repository templates
 - [scripts/wiki-stats.py](scripts/wiki-stats.py) — lightweight wiki summary for page, source, and activity counts
 - [examples/sample-wiki/](examples/sample-wiki/) — a working example wiki to reference

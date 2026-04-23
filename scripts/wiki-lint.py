@@ -168,7 +168,11 @@ def check_broken_links(pages: dict[str, Path], all_links: dict[str, list[str]]) 
 
 
 def check_orphans(pages: dict[str, Path], inbound: dict[str, list[str]]) -> list[str]:
-    return [f"  {name}.md" for name in sorted(pages) if len(inbound.get(name, [])) == 0]
+    return [
+        f"  {name}.md: orphan page (0 inbound wiki links)"
+        for name in sorted(pages)
+        if len(inbound.get(name, [])) == 0
+    ]
 
 
 def check_index_completeness(wiki: Path, pages: dict[str, Path]) -> list[str]:

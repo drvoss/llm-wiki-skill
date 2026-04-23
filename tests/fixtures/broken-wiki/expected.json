@@ -5,6 +5,7 @@
     "broken link"
   ],
   "required_warning_substrings": [
+    "orphan page (0 inbound wiki links)",
     "unknown tag",
     "no frontmatter block",
     "not in index.md",
